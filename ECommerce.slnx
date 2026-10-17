@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="ECommerce.ConsoleApp/ECommerce.ConsoleApp.csproj" />
+  <Project Path="ECommerce.Core/ECommerce.Core.csproj" />
+  <Project Path="ECommerce.Tests/ECommerce.Tests.csproj" />
+</Solution>
