@@ -20,11 +20,11 @@ namespace ECommerce.Core.Logic
         /// </summary>
         public decimal CalculateSubtotal(List<CartItem> items)
         {
-            if (items == null || items.Count == 0) return 0;
+            if (items == null || items.Count == 0) { return 0; }
 
             decimal subtotal = 0;
 
-            for (int i = 0; i < items.Count - 1; i++)
+            for (int i = 0; i < items.Count; i++)
             {              
                 subtotal += (items[i].Price * items[i].Quantity);
             }
@@ -39,7 +39,7 @@ namespace ECommerce.Core.Logic
         {
             if (subtotal <= 0) return 0;
                        
-            return subtotal - 10.00m;
+            return subtotal - (subtotal * 0.10m);
         }
     }
 }
