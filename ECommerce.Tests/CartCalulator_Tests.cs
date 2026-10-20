@@ -29,6 +29,8 @@ namespace ECommerce.Tests
             decimal expectedSubtotal = 13.00m;
             // 2. ACT: Execute the method we are testing
             decimal actualSubtotal = calculator.CalculateSubtotal(items);
+
+
             // 3. ASSERT: Verify the result matches our expectations
             Assert.That(actualSubtotal, Is.EqualTo(expectedSubtotal).Within(0.01m), "The subtotal should be the sum of (Price * Quantity) for all items.");
         }
